@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">FoodZam</string>
+    <string name="minimum_password">Password length less than 6</string>
+    <string name="auth_failed">Wrong Email or Password</string>
+    <string name="title_activity_search_name">SearchName</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+    <string name="navigation_bar_open">Open Navigation Bar</string>
+    <string name="navigation_bar_close">Close Navigation Bar</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

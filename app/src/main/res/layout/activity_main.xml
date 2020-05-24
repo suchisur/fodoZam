@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/food"
+    tools:context=".Start">
+
+    <RelativeLayout
+        android:id="@+id/SignIn"
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@drawable/bkg"
+        android:backgroundTint="#66070505"
+        android:backgroundTintMode="src_over"
+        android:foregroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="80dp"
+            android:fontFamily="@font/amatica_sc"
+            android:text="FOOD"
+            android:textColor="#EFE588"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <ProgressBar
+            android:id="@+id/pbar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title2"
+            android:layout_alignParentBottom="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"/><![CDATA[
+            //android:visibility="invisible" />
+
+        ]]>
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/freckle_face"
+            android:text="ZAM"
+            android:textColor="#EFE588"
+            android:textSize="40sp"
+            android:textStyle="normal" />
+
+        <EditText
+            android:id="@+id/Email"
+            android:layout_width="299dp"
+            android:layout_height="43dp"
+            android:layout_below="@id/title2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/round_bg"
+            android:ems="10"
+            android:hint="Email"
+            android:includeFontPadding="false"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="10dp"
+            android:textColor="#152478"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="299dp"
+            android:layout_height="43dp"
+            android:layout_below="@id/Email"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/round_bg"
+            android:ems="10"
+            android:hint="Password"
+            android:includeFontPadding="false"
+            android:inputType="textPassword"
+            android:paddingHorizontal="10dp"
+            android:textColor="#152478"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/round_bg"
+            android:backgroundTint="#EFE588"
+            android:backgroundTintMode="src_over"
+            android:text="REGISTER" />
+
+        <Button
+            android:id="@+id/Login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Register"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/abeezee"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="Already registered?Login!"
+            android:textColor="#EFE588"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,17 @@
+burger
+butter_chicken
+chocolate_cake
+dal
+donut
+dosa
+fish_fry
+fried_rice
+hakka_noodles
+idli
+paratha
+penne_alfredo
+pesto_pasta
+pizza
+rajma_chawal
+tacos
+waffles

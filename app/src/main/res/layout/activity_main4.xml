@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/aboutus"
+    tools:context=".AboutUs">
+
+    <RelativeLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:background="@drawable/aboutus"
+        android:backgroundTint="#66462814"
+        android:backgroundTintMode="src_over"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/editText2"
+            android:layout_width="280dp"
+            android:layout_height="443dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="60dp"
+            android:ems="10"
+            android:fontFamily="@font/amethysta"
+            android:gravity="start|top"
+            android:inputType="textMultiLine"
+            android:longClickable="false"
+            android:text="Food is an integral part of our lives. Often, we come across foods we perhaps don't recognize, or have not ever seen before, specially during travelling. FoodZam is an app which helps you identify what it is that caught your eye and perhaps made your mouth water by it's fragrance or looks. For the health conscious, this app also gives out the number of calories present in everyday foods."
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            android:textColor="#EFE588" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="99dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editText2"
+            android:layout_alignRight="@id/editText2"
+            android:background="@drawable/round_bg"
+            android:backgroundTint="#EFE588"
+            android:text="back" />
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

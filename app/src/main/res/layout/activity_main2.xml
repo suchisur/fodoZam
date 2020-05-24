@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hmm"
+    android:backgroundTint="#4DFFFFFF"
+    android:backgroundTintMode="src_over"
+    android:fitsSystemWindows="true"
+    android:foregroundTint="#33FFFFFF"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#33FFFFFF"
+        android:backgroundTintMode="src_over"
+        android:paddingBottom="16dp"
+        tools:context="@tools:sample/date/ddmmyy">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/divider_horizontal_dark"
+            android:elevation="4dp"
+            android:navigationIcon="@drawable/ic_menu_black_24dp"
+            android:paddingLeft="5dp" />
+
+        <com.wonderkiln.camerakit.CameraView
+            android:id="@+id/cameraView"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_gravity="center|top"
+            android:layout_marginTop="80dp" />
+
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginTop="470dp"
+            android:background="#9F6868"
+            android:gravity="bottom|center"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+
+            <TextView
+                android:id="@+id/textViewResult"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fadeScrollbars="false"
+                android:gravity="center_horizontal"
+                android:maxLines="15"
+                android:padding="4dp"
+                android:scrollbars="vertical"
+                android:textColor="@android:color/black"
+                android:visibility="visible" />
+
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/imageViewResult"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_gravity="top|end"
+            android:layout_marginBottom="50dp"
+            android:padding="2dp"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/btnToggleCamera"
+            android:layout_width="130dp"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom|start"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="80dp"
+            android:background="@drawable/round_bg"
+            android:backgroundTint="#EFE588"
+            android:text="Toggle Camera"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black" />
+
+        <Button
+            android:id="@+id/btnDetectObject"
+            android:layout_width="130dp"
+            android:layout_height="48dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="80dp"
+            android:background="@drawable/round_bg"
+            android:backgroundTint="#EFE588"
+            android:text="Detect Object"
+            android:textAllCaps="false"
+            android:textColor="@android:color/black"
+            android:visibility="gone" />
+
+    </FrameLayout>
+
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header"
+
+        app:menu="@menu/drawer_menu" />
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login">
+
+    <RelativeLayout
+        android:id="@+id/yes"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/choco"
+        android:backgroundTint="#66070505"
+        android:backgroundTintMode="src_over">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/amatica_sc"
+            android:text="FOOD "
+            android:textColor="#EFE588"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/Email"
+            android:layout_width="299dp"
+            android:layout_height="43dp"
+            android:layout_below="@id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:background="@drawable/round_bg"
+            android:ems="10"
+            android:hint="Email"
+            android:includeFontPadding="false"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="10dp"
+            android:textColor="#152478"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/Password"
+            android:layout_width="299dp"
+            android:layout_height="43dp"
+            android:layout_below="@id/Email"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/round_bg"
+            android:ems="10"
+            android:hint="Password"
+            android:includeFontPadding="false"
+            android:inputType="textPassword"
+            android:paddingHorizontal="10dp"
+            android:textColor="#152478"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Lg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Password"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/round_bg"
+            android:backgroundTint="#EFE588"
+            android:backgroundTintMode="src_over"
+            android:text="LOGIN" />
+
+        <ProgressBar
+            android:id="@+id/pbar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_alignParentBottom="false"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="58dp" />
+
+        <Button
+            android:id="@+id/Forgot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Lg"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/abeezee"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:text="Forgot Password?"
+            android:textColor="#EFE588"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Lg"
+            android:layout_centerHorizontal="false"
+            android:layout_marginTop="140dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/abeezee"
+            android:paddingLeft="20dp"
+            android:paddingRight="15dp"
+            android:text="New user? "
+            android:textColor="#EFE588"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/freckle_face"
+            android:text="ZAM"
+            android:textColor="#EFE588"
+            android:textSize="40sp" />
+
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
