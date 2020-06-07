@@ -1,2 +1,2 @@
-# fodoZam
+# foodZam
 Food recognition app
